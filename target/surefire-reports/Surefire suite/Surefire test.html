@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 20 17:39:46 BST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>274 seconds (274493 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankManagerShouldAddCustomerSuccessfully()'><b>bankManagerShouldAddCustomerSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-787122337" onClick='toggleBox("Output-787122337", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-787122337" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-787122337">
+Clicking on Manager Login Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Bank Manager Login')]]<br><br/>
+Clicking on Add Customer Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Add Customer')]]<br><br/>
+Entering First Name : VJLiY on First Name Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //input[@placeholder='First Name']]<br><br/>
+Entering Last Name : nJ1t on Last Name Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //input[@placeholder='Last Name']]<br><br/>
+Entering postcode : HA6 1NW on Postcode Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //input[@placeholder='Post Code']]<br><br/>
+Clicking on Add Customer Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn btn-default']]<br><br/>
+Clicking on Home Page Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn home']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.bank.testsuite.BankTest@27a8c74e</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankManagerShouldDeleteCustomerSuccessfully()'><b>bankManagerShouldDeleteCustomerSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-291651850" onClick='toggleBox("Output-291651850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-291651850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-291651850">
+Clicking on Manager Login Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Bank Manager Login')]]<br><br/>
+Clicking on Customers Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Customers')]]<br><br/>
+Finding Customer by First Name : VJLiY On Search Customer Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //input[@placeholder='Search Customer']]<br><br/>
+ Clicking on Delete Customer Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Delete')]]<br><br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>com.bank.testsuite.BankTest@27a8c74e</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankManagerShouldOpenAccountSuccessfully()'><b>bankManagerShouldOpenAccountSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-864852424" onClick='toggleBox("Output-864852424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-864852424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-864852424">
+Clicking on Manager Login Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Bank Manager Login')]]<br><br/>
+Clicking on Open Account Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Open Account')]]<br><br/>
+Selecting Customer Name from Drop Down : VJLiY nJ1t On Select Customer Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Selecting Currency from Drop Down : Pound On Select Currency Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='currency']]<br><br/>
+Clicking on Process Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Process')]]<br><br/>
+Displaying PopUp Message. <br><br/>
+Clicking on Home Page Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn home']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.bank.testsuite.BankTest@27a8c74e</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldDepositMoneySuccessfully()'><b>customerShouldDepositMoneySuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-1171255580" onClick='toggleBox("Output-1171255580", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1171255580" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1171255580">
+Clicking on Customer Login Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Customer Login')]]<br><br/>
+Clicking on Your Name Field : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Selecting Name of Customer from DropDown  : VJLiY nJ1t Your Name Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Clicking on Customer Login Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Clicking on Deposit Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Deposit')]]<br><br/>
+Entering deposit amount : 100 On Deposit Amount Field  [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //input[@placeholder='amount']]<br><br/>
+Clicking on Deposit Button: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn btn-default']]<br><br/>
+Verifying Deposit Success Text: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //span[@class='error ng-binding']]<br><br/>
+Getting Deposit Success Text: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //span[@class='error ng-binding']]<br><br/>
+Getting Deposit Success Text: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //span[@class='error ng-binding']]<br><br/>
+Clicking on Home Page Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn home']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>com.bank.testsuite.BankTest@27a8c74e</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldLoginAndLogoutSuccessfully()'><b>customerShouldLoginAndLogoutSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-843299092" onClick='toggleBox("Output-843299092", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-843299092" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-843299092">
+Clicking on Customer Login Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Customer Login')]]<br><br/>
+Clicking on Your Name Field : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Selecting Name of Customer from DropDown  : VJLiY nJ1t Your Name Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Clicking on Customer Login Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Verifying Customer Log Out Tab is Displayed : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn logout']]<br><br/>
+Getting Customer Log Out Text: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn logout']]<br><br/>
+Clicking on Customer Log Out Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn logout']]<br><br/>
+ Verify Your Name Text is Displayed  : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //label[contains(text(),'Your Name :')]]<br><br/>
+ Getting Your Name Text : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //label[contains(text(),'Your Name :')]]<br><br/>
+Clicking on Home Page Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn home']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.bank.testsuite.BankTest@27a8c74e</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldWithdrawMoneySuccessfully()'><b>customerShouldWithdrawMoneySuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-1968552224" onClick='toggleBox("Output-1968552224", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1968552224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1968552224">
+Clicking on Customer Login Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Customer Login')]]<br><br/>
+Clicking on Your Name Field : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Selecting Name of Customer from DropDown  : VJLiY nJ1t Your Name Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Clicking on Customer Login Button : [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //select[@name='userSelect']]<br><br/>
+Clicking on Withdrawl Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[contains(text(),'Withdrawl')]]<br><br/>
+Entering withdrawl amount : 50 On Withdrawal Amount Field [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //input[@placeholder='amount']]<br><br/>
+Clicking on Withdrawl Button: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn btn-default']]<br><br/>
+Verifying Transaction Success Text: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //span[@class='error ng-binding']]<br><br/>
+Getting Transaction Success Text: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //span[@class='error ng-binding']]<br><br/>
+Clicking on Home Page Tab: [[ChromeDriver: chrome on WINDOWS (4ac1a097654e5cdd56b10895edae637a)] -> xpath: //button[@class='btn home']]<br><br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>com.bank.testsuite.BankTest@27a8c74e</td></tr>
+</table><p>
+</body>
+</html>
